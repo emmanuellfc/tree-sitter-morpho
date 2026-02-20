@@ -1,0 +1,19 @@
+// Example Morpho program
+var x = 10
+var list = [1, 2, 3]
+
+fn factorial(n) {
+    if (n <= 1) {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+print factorial(5)
+
+for (item in list) {
+    print item * 2
+}
+
+class Foo {
+}
