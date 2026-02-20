@@ -27,16 +27,25 @@
   "with"
 ] @keyword
 
+; Literal Self Keyword
+(self) @variable.builtin
+
 ; Classes
 (class_declaration
   name: (identifier) @type)
 
-; Function Definitions
+; Function and Method Definitions
 (function_definition
   name: (identifier) @function)
 
 (function_expression
   name: (identifier) @function)
+
+(method_declaration
+  name: (identifier) @method)
+
+(member_expression
+  (identifier) @property)
 
 ; Comments
 (line_comment) @comment

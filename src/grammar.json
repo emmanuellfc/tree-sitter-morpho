@@ -1654,20 +1654,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "FIELD",
-              "name": "name",
-              "content": {
-                "type": "SYMBOL",
-                "name": "identifier"
-              }
-            },
-            {
-              "type": "BLANK"
-            }
-          ]
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          }
         },
         {
           "type": "STRING",
@@ -2035,10 +2027,6 @@
     [
       "function_definition",
       "function_expression"
-    ],
-    [
-      "variable_declaration",
-      "method_declaration"
     ]
   ],
   "precedences": [],

@@ -16,4 +16,11 @@ for (item in list) {
 }
 
 class Foo {
+    init(a,b,c) {
+        self.a = a
+        self.b = b
+        self.c = c
+    }
+    oneMethod() {}
+    anotherMethod() {}
 }

@@ -14,8 +14,7 @@ export default grammar({
 
   conflicts: ($) => [
     [$.dictionary, $.block],
-    [$.function_definition, $.function_expression],
-    [$.variable_declaration, $.method_declaration]
+    [$.function_definition, $.function_expression]
   ],
 
   word: ($) => $.identifier,
@@ -250,7 +249,7 @@ export default grammar({
 
     method_declaration: ($) =>
       seq(
-        optional(field("name", $.identifier)),
+        field("name", $.identifier),
         "(",
         optional($.parameter_list),
         ")",
