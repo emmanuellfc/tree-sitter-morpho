@@ -42,7 +42,7 @@
   name: (identifier) @function)
 
 (method_declaration
-  name: (identifier) @method)
+  name: (identifier) @function.method)
 
 (member_expression
   (identifier) @property)
